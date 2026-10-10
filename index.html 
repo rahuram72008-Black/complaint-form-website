@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Complaint Form</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eaf2ff;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #174ea6;
+      text-align: center;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background: #174ea6;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Complaint Form</h1>
+
+  <form>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email" required>
+
+    <br><br>
+
+    <label>Department:</label>
+    <select required>
+      <option value="">Choose department</option>
+      <option>Electricity</option>
+      <option>Water Supply</option>
+      <option>Roads</option>
+    </select>
+
+    <br><br>
+
+    <label>Complaint Details:</label>
+    <textarea placeholder="Type your complaint" required></textarea>
+
+    <br><br>
+
+    <button type="submit">Submit Complaint</button>
+  </form>
+</body>
+</html>
